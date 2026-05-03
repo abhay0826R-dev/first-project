@@ -23,16 +23,16 @@ function randomInt(min, max) {
 
 // 1 for win ; 0 for lose
 function finalResult(res) {
-    if (res) {// win (res = 1)
+    if (res) {      // win (res = 1)
         resultEl.innerText = "YOU WIN !!!!!"
         userWon = true;
     }
-    else {   // loose condition (res = 0)
+    else {           // loose condition (res = 0)
         resultEl.innerText = "YOU LOOSE !!!"
         userWon = false;
     }
-    revealDealersCard()
     gameOver = true;
+    revealDealersCard()
 }
 
 function alertUserToRestart() {
@@ -48,7 +48,10 @@ function revealDealersCard() {
 }
 
 function dealersPlay() {
-    dealerCard = randomInt(1,12)
+    if (dealerCard<17) {
+        dealerCard = randomInt(1,12)
+        dealerSum += dealerCard
+    }
 }
 
 function checkUserState() {
@@ -63,7 +66,7 @@ function checkUserState() {
 
 function rollUser() {
     if (gameOver) {
-        alertUserToRestart()
+        alertUserToRestart();
         return;
     }
     userCard = randomInt(1,12);
@@ -90,4 +93,5 @@ function startGame() {
     dealerCard = 0
     userCardEl.innerText = "Card : " + userCard
     userSumEl.innerText = "Sum : " + userSum
+    gameOver = false
 }
