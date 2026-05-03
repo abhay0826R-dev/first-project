@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>blackjack game</title>
+    </head>
+    <body>
+        <div class="content">    
+            <div class="player-menu">
+                <h1 class="user-name">Player</h1>
+                <h1>Roll to get your card!</h1>
+                <h2 id="user-current-card">Card : </h2>
+                <h2 id="user-sum">Sum : </h2>
+                <button class="player-button" onclick="rollUser()">ROLL</button>
+                <button class="player-button" onclick="hitUser()">HIT</button>
+            </div>
+            <div class="computer-menu">
+                <h1 class="user-name">computer</h1>
+                <h1>waiting for turn!</h1>
+                <h2>Card : </h2>
+                <h2>Sum : </h2>
+            </div>
+        </div>
+        <div class="container2">
+            <h1 id="result">result will be diplayed here</h1>
+            <button class="player-button" onclick="startGame()">Restart</button>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>

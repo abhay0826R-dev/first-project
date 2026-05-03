@@ -1,0 +1,47 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3vh;
+    background: darkgreen;
+    text-align: center;
+}
+
+.player-button {
+    width: 7vw;
+    height: 5vh;
+    font-size: 3vh;
+    background-color: aquamarine;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    align-items: center;
+}
+
+.player-menu {
+    background-color: rgb(169, 163, 163, 0.7);
+    padding: 3%;
+    width: 30vw;
+    margin-top: 7vh;
+    border-radius: 5%;
+}
+.computer-menu {
+    background-color: rgb(169, 163, 163, 0.7);
+    padding: 3%;
+    width: 30vw;
+    margin-top: 7vh;
+    border-radius: 5%;
+}
+
+.user-name {
+    border-bottom: 3px black solid;
+    padding-bottom: 3vh;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
