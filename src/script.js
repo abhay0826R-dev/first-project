@@ -52,6 +52,9 @@ function dealersPlay() {
         dealerCard = randomInt(1,12)
         dealerSum += dealerCard
     }
+    if (dealerSum > 21) {
+        finalResult(1)        
+    }
 }
 
 function checkUserState() {
