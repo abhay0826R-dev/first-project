@@ -1,7 +1,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 3vh;
-    background: darkgreen;
+    background: rgb(30, 53, 47);
     text-align: center;
 }
 
@@ -20,14 +20,14 @@ body {
 }
 
 .player-menu {
-    background-color: rgb(169, 163, 163, 0.7);
+    background-color: rgb(214, 255, 246, 0.7);
     padding: 3%;
     width: 30vw;
     margin-top: 7vh;
     border-radius: 5%;
 }
 .computer-menu {
-    background-color: rgb(169, 163, 163, 0.7);
+    background-color: rgb(214, 255, 246, 0.7);
     padding: 3%;
     width: 30vw;
     margin-top: 7vh;
